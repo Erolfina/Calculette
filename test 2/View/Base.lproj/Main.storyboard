@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MyViewController" customModule="Calculette" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="0" textAlignment="right" findInteractionEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhW-8n-czd">
+                                <rect key="frame" x="8" y="67" width="377" height="377"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="58"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yus-gg-7y0" userLabel="Stack View Final">
+                                <rect key="frame" x="8" y="452" width="377" height="358"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2mK-Bc-9Z8">
+                                        <rect key="frame" x="8" y="0.0" width="361" height="200"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cEp-Yf-Hta" userLabel="Stack View Number">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="148"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-qt-Owe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="148"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-P6-7jj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgH-n9-Ptr"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCB-Bw-Oes">
+                                                                <rect key="frame" x="0.0" y="52" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sBQ-jA-Jd9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yui-Nc-bZp">
+                                                                <rect key="frame" x="0.0" y="104" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNS-5O-q81"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lgq-7b-9m8">
+                                                        <rect key="frame" x="123" y="0.0" width="115" height="148"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIZ-vk-6H9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iws-JG-yzB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdQ-Tt-KKP">
+                                                                <rect key="frame" x="0.0" y="52" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HVj-zL-kTB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbb-MD-M7E">
+                                                                <rect key="frame" x="0.0" y="104" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Tt-CU-8Va"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-qI-HfQ">
+                                                        <rect key="frame" x="246" y="0.0" width="115" height="148"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLX-Ym-hcy">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72h-Dg-CgA"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-E4-Sgj">
+                                                                <rect key="frame" x="0.0" y="52" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80U-8t-Pln"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXg-4c-NCl">
+                                                                <rect key="frame" x="0.0" y="104" width="115" height="44"/>
+                                                                <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="233-pJ-awN"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wgs-oZ-CKu" userLabel="Stack View 0">
+                                                <rect key="frame" x="0.0" y="156" width="361" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAC-YZ-65a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="44"/>
+                                                        <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="tappedNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFE-Ff-VkY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nd-9t-42s" userLabel="Clear">
+                                                        <rect key="frame" x="184.66666666666663" y="0.0" width="176.33333333333337" height="44"/>
+                                                        <color key="backgroundColor" red="0.60392156860000001" green="0.57647058819999997" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                        <state key="normal" title="C">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FPr-8d-fUN">
+                                        <rect key="frame" x="8" y="208" width="361" height="150"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-OD-7UP">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="97.666666666666671"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9dR-Hy-iMn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="45"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocb-Q2-DZG" userLabel="/">
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="45"/>
+                                                                <color key="backgroundColor" red="0.46913260919999999" green="0.7149516575" blue="0.62407517239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="/">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedDivisionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJb-kW-KY9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-4w-wRc" userLabel="x">
+                                                                <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="45"/>
+                                                                <color key="backgroundColor" red="0.46913260919999999" green="0.7149516575" blue="0.62407517239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="x">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedMultiplicationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8kF-eS-Du2"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Vor-WL-o3g">
+                                                        <rect key="frame" x="0.0" y="53" width="361" height="44.666666666666657"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WE-sU-848">
+                                                                <rect key="frame" x="0.0" y="0.0" width="173" height="44.666666666666664"/>
+                                                                <color key="backgroundColor" red="0.46913260919999999" green="0.7149516575" blue="0.62407517239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="+">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedAdditionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nyg-R4-Q2J"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7K-md-pG9">
+                                                                <rect key="frame" x="188" y="0.0" width="173" height="44.666666666666664"/>
+                                                                <color key="backgroundColor" red="0.87294975829999999" green="0.37112226879999999" blue="0.32504552809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                <state key="normal" title="-">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="tappedSubstractionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0g-Xl-sdN"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifg-fq-ry3">
+                                                <rect key="frame" x="0.0" y="105.66666666666663" width="361" height="44.333333333333343"/>
+                                                <color key="backgroundColor" red="0.94643473759999996" green="0.64318747399999998" blue="0.12665354140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tappedEqualButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7G-v6-KKr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="cRp-hg-eDt"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FPr-8d-fUN" firstAttribute="top" secondItem="2mK-Bc-9Z8" secondAttribute="bottom" constant="8" id="JdW-xS-z6u"/>
+                                    <constraint firstItem="2mK-Bc-9Z8" firstAttribute="leading" secondItem="yus-gg-7y0" secondAttribute="leading" constant="8" id="bf5-ZL-3qR"/>
+                                    <constraint firstAttribute="trailing" secondItem="FPr-8d-fUN" secondAttribute="trailing" constant="8" id="g68-2H-VEb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yus-gg-7y0" firstAttribute="top" secondItem="hhW-8n-czd" secondAttribute="bottom" constant="8" id="CoO-EP-0H0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hhW-8n-czd" secondAttribute="trailing" constant="8" id="Dui-yo-hsR"/>
+                            <constraint firstItem="hhW-8n-czd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="SI0-1a-cWY"/>
+                            <constraint firstItem="hhW-8n-czd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="c3l-Kh-OXu"/>
+                            <constraint firstItem="yus-gg-7y0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="rrn-fw-LmA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yus-gg-7y0" secondAttribute="bottom" constant="8" id="tRo-Dn-s6v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yus-gg-7y0" secondAttribute="trailing" constant="8" id="z3u-Gf-3Xa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="hhW-8n-czd" id="bHB-Hy-S9f"/>
+                        <outletCollection property="numberButtons" destination="lAC-YZ-65a" collectionClass="NSMutableArray" id="ung-1H-PhQ"/>
+                        <outletCollection property="numberButtons" destination="RtS-P6-7jj" collectionClass="NSMutableArray" id="wsF-8s-EfN"/>
+                        <outletCollection property="numberButtons" destination="QCB-Bw-Oes" collectionClass="NSMutableArray" id="2lI-K1-KAn"/>
+                        <outletCollection property="numberButtons" destination="Yui-Nc-bZp" collectionClass="NSMutableArray" id="uqk-TA-rq6"/>
+                        <outletCollection property="numberButtons" destination="sdQ-Tt-KKP" collectionClass="NSMutableArray" id="gKQ-5i-g1C"/>
+                        <outletCollection property="numberButtons" destination="Bbb-MD-M7E" collectionClass="NSMutableArray" id="5Rp-qx-ohV"/>
+                        <outletCollection property="numberButtons" destination="wLX-Ym-hcy" collectionClass="NSMutableArray" id="6GL-vk-4ue"/>
+                        <outletCollection property="numberButtons" destination="x5v-E4-Sgj" collectionClass="NSMutableArray" id="HBR-fO-j0g"/>
+                        <outletCollection property="numberButtons" destination="aXg-4c-NCl" collectionClass="NSMutableArray" id="xHB-Kb-vaR"/>
+                        <outletCollection property="numberButtons" destination="tIZ-vk-6H9" collectionClass="NSMutableArray" id="4xh-qC-3je"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
