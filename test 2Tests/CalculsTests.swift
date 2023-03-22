@@ -9,7 +9,7 @@ import XCTest
 @testable import Calculette
 
 final class calculsTests: XCTestCase {
-    
+    //MARK: - Properties
     var calculs: Calculs!
     
     override func setUp() {
@@ -17,6 +17,7 @@ final class calculsTests: XCTestCase {
         calculs = Calculs()
     }
 
+    //MARK: - Test Methods
     func testCalculsClassExist() {
         XCTAssertNotNil(calculs)
     }
