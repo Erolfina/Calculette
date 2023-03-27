@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// <#Description#>
 class MyViewController: UIViewController {
     
     //MARK: - Outlets
@@ -16,24 +17,22 @@ class MyViewController: UIViewController {
     
     //MARK: - Properties
     
-    var calculs = Calculs()
-    
-    //affiche ce que l'on ecrit sur le textview. Fonctionne comme un label
+    /// affiche ce que l'on ecrit sur le textview. Fonctionne comme un label
     var elements: [String] {
         return textView.text.split(separator: " ").map { "\($0)" }
     }
     
-    //verifie que les bouton appuyés sont des chiffres
+    ///verifie que les bouton appuyés sont des chiffres
     var expressionIsCorrect: Bool {
         return elements.last != "+" && elements.last != "-" && elements.last != "/" && elements.last != "x" && elements.last != "="
     }
     
-    //verifie qu'il y a au moins trois elements pour faire un calcul
+    ///verifie qu'il y a au moins trois elements pour faire un calcul
     var expressionHaveEnoughElement: Bool {
         return elements.count >= 3
     }
     
-    //verifie que l'on ajoute pas plusieurs operateur les uns apres les autres
+    ///verifie que l'on ajoute pas plusieurs operateur les uns apres les autres
     var canAddOperator: Bool {
         return elements.last != "+" && elements.last != "-" && elements.last != "/" && elements.last != "x" && elements.last != "="
     }
@@ -51,9 +50,7 @@ class MyViewController: UIViewController {
     }
     
     //MARK: - Actions
-    
-    
-    
+
     @IBAction func tappedNumberButton(_ sender: UIButton) {
         guard let numberText = sender.title(for: .normal) else { return }
         if expressionHaveResult ||  textView.text == "0" {
@@ -76,6 +73,7 @@ class MyViewController: UIViewController {
     }
     
     @IBAction func tappedEqualButton(_ sender: UIButton) {
+        let calculs = Calculs()
         let messageWhenExpressionIscorrect = "Entrez une expression correcte !"
         let messageWhenexpressionHaveEnoughElement = "Démarrez un nouveau calcul !"
         
@@ -87,7 +85,7 @@ class MyViewController: UIViewController {
             presentAlert.presentAlert(on: self, titleAlert: titleAlert, titleAction: titleAlert, message: messageWhenexpressionHaveEnoughElement)
             return
         }
-        let result = calculs.resolve(elements:elements)
+        let result = calculs.resolve(elements: elements)
         textView.text.append(" = \(result)")
     }
 

@@ -14,7 +14,7 @@ final class calculsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        calculs = Calculs()
+        calculs =  Calculs()
     }
 
     //MARK: - Test Methods
@@ -64,5 +64,19 @@ final class calculsTests: XCTestCase {
         let elements = ["10","-","6","/","2"]
         let result = calculs.resolve(elements: elements)
         XCTAssertEqual(result, "7")
+    }
+    
+    func testGivenLeftOperandIs2AndRightOperandIs7_WhenOperatorIsX_ThenResultIsTrue() {
+           // Test with operations containing multiplication
+        let elements = ["+", "-", "x", "/"]
+           XCTAssertTrue(calculs.checkOperator(elements: elements))
+           
+           // Test with operations containing division
+                    let elements2 = ["+", "-", "/", "+"]
+           XCTAssertTrue(calculs.checkOperator(elements: elements2))
+           
+           // Test with no multiplication or division
+                         let elements3 = ["+", "-", "+"]
+           XCTAssertFalse(calculs.checkOperator(elements: elements3))
     }
 }
