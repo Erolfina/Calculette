@@ -19,7 +19,7 @@ public class Calculs {
         while operationsToReduce.count > 1 {
             if checkOperator(elements: operationsToReduce) {
                 guard let index = operationsToReduce.firstIndex(where: { $0 == "x" || $0 == "/" }) else { return "" }
-                let result = self.operatePriorityCalculs(index: index, elements: elements)
+                let result = self.operatePriorityCalculs(index: index, elements: operationsToReduce)
                 operationsToReduce[index-1...index+1] = [String(result)]
             } else {
                 let result = self.operateNonPriorityCalculs(index: 0, elements: operationsToReduce)

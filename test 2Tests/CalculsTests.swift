@@ -79,4 +79,11 @@ final class calculsTests: XCTestCase {
                          let elements3 = ["+", "-", "+"]
            XCTAssertFalse(calculs.checkOperator(elements: elements3))
     }
+    
+    func testGivenMultipleOperation_WhenOneOPeratorIsX_ThenMultiplicationIsPriority() {
+        let elements = ["5", "x", "2", "+", "6", "/", "3"]
+        let result = calculs.resolve(elements: elements)
+        XCTAssertEqual(result, "12")
+    }
+
 }

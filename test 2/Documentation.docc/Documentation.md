@@ -4,7 +4,7 @@
 
 ## Overview
 
-<!--@START_MENU_TOKEN@-->Text<!--@END_MENU_TOKEN@-->
+Calculette is a simple calculator app that can perform basic arithmetic operations on integers. It takes in a string of input and returns the result of the calculations as a string.
 
 ## Topics
 

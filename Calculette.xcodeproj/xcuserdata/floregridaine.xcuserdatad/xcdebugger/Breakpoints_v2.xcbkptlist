@@ -3,4 +3,70 @@
    uuid = "E2F3F40C-AE84-4910-BC2A-FD37DA5BBB43"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8C01F8F-0835-45C3-9064-90D0B4B068CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test 2/Model/Calculs.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "resolve(elements:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "365CF466-E049-45AF-90BD-09464C09273E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "test 2/Model/Calculs.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "resolve(elements:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "365CF466-E049-45AF-90BD-09464C09273E - 13f6f4544afaad65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Calculette.Calculs.resolve(elements: Swift.Array&lt;Swift.String&gt;) -&gt; Swift.String"
+                  moduleName = "Calculette"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/floregridaine/Documents/openclassroom/Calculette/test%202/Model/Calculs.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "365CF466-E049-45AF-90BD-09464C09273E - b9e5d4c77e61bb88"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; Swift.Bool in Calculette.Calculs.resolve(elements: Swift.Array&lt;Swift.String&gt;) -&gt; Swift.String"
+                  moduleName = "Calculette"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/floregridaine/Documents/openclassroom/Calculette/test%202/Model/Calculs.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
